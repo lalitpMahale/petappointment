@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form{
+    background-image: url('assets/ChatGPT\ Image\ Sep\ 28\,\ 2026\,\ 05_59_21\ PM.png');
+}
+
+.logo{
+    margin-left: 10%;
+    padding: 10px;
+}
+.logo th{
+    font-size: 6vh;
+}
+
+.logo .h3{
+      font-family: Arial,Bold,sans-serif;
+      color: brown;
+}
+.logo .h1{
+    font-size: 8vh;
+
+}
+
+.form1{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 90%;
+    justify-self: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.48);
+}
+.form1  .numb{
+    /* border: 1px solid ; */
+    background-color: rgb(202, 129, 206);
+    padding: 2px 8px;
+    border-radius: 50%;
+}
+
+ .parentNeedsection {
+    display: flex;
+    width: 100%;
+    /* justify-content: space-evenly; */
+    margin: 10px;
+    /* margin: 10px; */
+    /* padding: 10px; */
+  
+ }
+ .chaildNeedsection {
+    /* display: flex; */
+    margin: 5px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: pink;
+    border: 2px solid rgb(239, 138, 239);
+    
+    transition: 0.3s;
+ }
+.chaildNeedsection a{
+    margin: 10px;
+}
+
+.chaildNeedsection:hover{
+    transform:translateY(-5px);
+    border-color: rgb(70, 31, 70);
+    cursor: pointer;
+}
+.chaildNeedsection.active{
+    background-color: rgb(202, 129, 206);
+}
+
+.chaildNeedsection img{
+    width: 30px;
+    height: 30px;
+}
+.chaildNeedsection p{
+    font-size: 14px;
+}
+
+/* lift to tab  in upper side using hover  in this we use transform  in hover css  of tab element transition time  */
+
+/* active are use for clicking the tabs and color change css */
+
+
+/* --------------------form2---------------------- */
+#form-1-2{
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* row-gap: 10px; */
+    margin-top: 20px;
+    justify-content: center;
+}
+.form2{
+    /* justify-content: center; */
+    /* width: 65%; */
+    border: 1px solid black;
+    /* margin-left: 10px; */
+    background-color: rgba(255, 255, 255, 0.486);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.form2  .numb{
+    /* border: 1px solid ; */
+    background-color: rgb(202, 129, 206);
+    padding: 2px 8px;
+    border-radius: 50%;
+}
+.form2 ul{
+    /* display: flex; */
+    width: 100%;
+    padding: 0;
+    /* margin: 10px; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-direction: row; */
+}
+.form2 i{
+    display: block;
+    font-size: 5vh;
+    text-align: center;
+}
+.form2 a{
+    text-align: center;
+    font-weight: 700;
+    text-transform:capitalize;
+}
+
+.form2 li{
+    width: 100px;
+    padding:  10px;
+    border: 2px solid blueviolet;
+    background-color: rgb(190, 134, 244);
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.form2 li:hover{
+    transform: translateY(-5px);
+     border: 2px solid rgb(62, 17, 104);
+     cursor: pointer;
+}
+
+
+.animal.active{
+    color: rgb(123, 23, 23);
+    /* background-color: brown; */
+}
+
+.form2 p{
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.form2 input{
+    padding: 7px 15px;
+     border-radius: 10px;
+}
+.form2 .name{
+    border: 2px solid rgb(198, 3, 3);
+    /* border-radius: 10px; */
+
+}
+.form2 .weight{
+     border: 2px solid rgb(198, 3, 3);
+    /* border-radius: 10px; */
+}
+.form2 .breed{
+    border: 2px solid rgb(170, 89, 246);
+}
+
+.form2 .age{
+    border: 2px solid rgb(190, 134, 244);
+}
+.form2 .petname{
+    color: rgb(198, 3, 3);
+}
+/* -------------------form3--------------------- */
+
+.form3{
+    border: 1px solid black;
+    /* height: 500px; */
+    margin-left: 10px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.454);
+    /* width: 50%; */
+}
+
+.form3  .numb{
+    /* border: 1px solid ; */
+    background-color: rgb(202, 129, 206);
+    padding: 2px 8px;
+    border-radius: 50%;
+}
+
+/* ------------------petImage Upload------------------------- */
+#imagePet {
+    display: none;
+}
+
+.dropArea{
+    width: 100%;
+    min-height: 180px;
+    border: 2px dashed rgb(124, 96, 170);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(215, 198, 241);
+}
+
+.dropArea:hover{
+   background-color: rgb(191, 154, 250);
+}
+.dropArea i{
+    font-size: 40px;
+    color: rgb(170, 89, 246);   
+    margin-bottom: 10px;
+}
+
+.dropArea h4{
+    font-size: 16px;
+}
+.dropArea span{
+    font-weight:bold;
+    color: rgb(53, 0, 128);
+    text-decoration: underline;
+}
+
+.form3 .para span{
+    font-weight: bold;
+    color: black;
+}
+.form3 .para{
+    margin-top: 20px;
+    padding: 10px;
+    border: 5px solid orange;
+    border-radius: 15px;
+    border-top: none;
+    background-color: rgba(253, 179, 88, 0.359);
+    font-weight: 100;
+    font-size: 14px;
+    color: gray;
+    border-bottom: none;
+    border-right: none;
+   
+}
+
+
+/* ------------------------UserForm----Secttion------------------------ */
+
+#name-id input{
+    width: 100%; 
+    /* background-color: aqua !important; */
+     padding: 7px;
+    border-radius: 10px;
+    border: 2px solid rgb(198, 3, 3);
+}
+#mobile-id input{
+    width: 100%;
+     padding: 7px;
+    border-radius: 10px;
+    border: 2px solid rgb(198, 3, 3);
+}
+#email-id input{
+    width: 100%;
+     padding: 7px;
+    border-radius: 10px;
+    border: 2px solid rgb(198, 3, 3);
+}
+
+
+
+#date-id input{
+    width: 100%;
+     padding: 7px;
+    border-radius: 10px;
+    border: 2px solid rgb(198, 3, 3);
+}
+#time-id input{
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid rgb(198, 3, 3);
+}
+
+
+#form4{
+    width: 95%;
+    margin-top: 20px;
+    padding: 20px !important;
+    border: 1px solid black; 
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.539);
+}
+#form4 p{
+    color: rgb(198, 3, 3);
+}
+
+
+
+.subbtn{
+    padding: 10px;
+    border-radius: 22px;
+    border: 2px solid rgb(198, 3, 3);
+    background-color: rgb(198, 3, 3);
+    color: white;
+    transition: 0.3s;
+}
+
+#subBtn-id{
+    margin-top: 30px;
+    margin-left: 35px;
+    padding-bottom: 30px;
+    
+}
+#subBtn-id a{
+    margin-left: 10%;
+    color: gray;
+}
+
+.subbtn:hover{
+    transform: translateY(-5px);
+}

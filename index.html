@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Later </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <form onsubmit="submited">
+        <section class="logo">
+            <table class="row  container-fluid">
+                <tr class="col-md-12 col-sm-6 col-lg-4">
+                    <th><i class="fa-solid fa-paw"></i></th>
+                    <td>
+                        <h3 class="h3">Paws & Whiskers Clinic</h3>
+                        <h1 class="h1">Book a Visit for your pet</h1>
+                        <p>Groomming Check-ups and vaccinations at 7 Orched Lane,Leeds. Open Monday to Saterday,
+                            09:00-18:00.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="form1">
+            <div>
+
+                <h2 class="h2"><span class="numb">1</span> What do you need?</h2>
+                <div class="parentNeedsection row container-fluid">
+                    <div class="chaildNeedsection col-12 col-sm-6 col-lg-4">
+                        <a><img src="assets/grooming_1050814.png"></a>
+                        <div>
+                            <p>Groomming<br />
+                                <span>Bath,trim,nails. &#8377; 2319</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="chaildNeedsection col-12 col-sm-6 col-lg-4">
+                        <a><img src="assets/veterinarian_3621421.png"></a>
+                        <div>
+                            <p>Vet-check-up<br />
+                                <span>Full health check. &#8377; 4319</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="chaildNeedsection col-12 col-sm-6 col-lg-4">
+                        <a><img src="assets/vaccination_17774529.png"></a>
+                        <div>
+                            <p>Vaccination<br />
+                                <span>Boosters and first jabs. &#8377; 519</span>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid align-items-center">
+            <div class="row container-fluid" id="form-1-2">
+            <section class="form2 col-12 col-sm-6 col-lg-7">
+                <h2 class="h2"><span class="numb">2</span> About your pet</h2>
+                <p class="p">Species</p>
+                <ul class="row row-cols-lg-auto g-3 align-items-center">
+                    <li class="animal col-12 col-sm-6 col-lg-3" id="dog" onclick="dogClick()"><a><i
+                                class="fa-solid fa-shield-dog"></i></a><a>Dog</a></li>
+                    <li class="animal col-12 col-sm-6 col-lg-3" id="cat" onclick="catClick()"><a><i
+                                class="fa-solid fa-shield-cat"></i></a><a>Cat</a></li>
+                    <li class="animal col-12 col-sm-6 col-lg-3" id="frog" onclick="frogClick()"><a><i
+                                class="fa-solid fa-frog"></i></a><a>frog</a></li>
+                    <li class="animal col-12 col-sm-6 col-lg-3" id="other" onclick="otherClick()"><a><i
+                                class="fa-solid fa-otter"></i></a><a>Other</a></li>
+
+                </ul>
+                <div class="row g-3">
+                    <div class=" col-12 col-sm-6 col-lg-6">
+                        <label>Pet's name</label><br>
+                        <input type="text" class="name">
+                        <p class="petname">What's your pet called?</p>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Breed</label><br>
+                        <input type="text" class="breed" placeholder="Starting typing...">
+                        <p id="sugges">Suggestions for </p>
+
+                    </div>
+                    <div class="col-md-6">
+                        <lable>Weight</lable><br>
+                        <input type="number" class="weight" min="0" step="0.1"><span>kg</span>
+                    </div>
+
+                    <div class="col-md-6">
+                        <lable>Age (years)</lable><br>
+                        <input type="number" class="age" min="0" step="1">
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="form3 col-12 col-sm-12 col-lg-3">
+                <h2 class="h2"><span class="numb">3</span> Vaccination record</h2> <a></a>
+                <div class="uploadBox">
+
+                    <input type="file" id="imagePet" accept="image/*">
+
+                    <label for="imagePet" class="dropArea">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h4>Drag & Drop your pet image</h4>
+                        <p>or <span>Browse</span></p>
+                        <small>JPG, PNG up to 5MB</small>
+                    </label>
+
+
+
+                </div>
+                <p class="para"><span>Why we ask</span><br>Our grooming room is shared, so we check core boosters are
+                    within the last 12 months. A photo of the vaccination card is fine.</p>
+
+
+
+
+
+            </section>
+
+        </div>
+        </div>
+        
+
+        <div class="container-fluid" id="form4">
+            <div class="row container-fluid">
+
+                <div class="col-sm-3" id="name-id">
+                    <lable for="uName">Your Name</lable><br />
+                    <input id="uName" type="text" /><br/>
+                    <p>Add your name.</p>
+                </div>
+                <div class="col-sm-3" id="mobile-id">
+                    <label for="mNumber">Mobile</label><br />
+                    <input id="mNumber" type="tel" /><br/>
+                    <p>Add a number for appointment reminders.</p>
+                </div>
+                <div class="col-sm-6" id="email-id">
+                    <label for="uEmail">Email</label><br />
+                    <input id="uEmail" type="email" /><br/>
+                    <p>Add an email for the confirmation.</p>
+                </div>
+
+            </div>
+
+            <div class="row container-fluid">
+                    <div class="col-sm-6" id="date-id">
+                        <label for="uDate">Date</label><br/>
+                        <input id="uDate" type="date"><br/>
+                        <h6>Closed on Sundays</h6>
+                        <p>Choose a date.</p>
+                    </div>
+                    <div class="col-sm-6" id="time-id">
+                        <label for="uTime">Time</label><br/>
+                        <input id="uTime" type="time"><br/>
+                        <p>Choose a time.</p>
+                    </div>
+            </div>
+        </div>
+
+        <div id="subBtn-id">
+            <button class="subbtn" type="submit">Boook Appoinment</button>
+             <a>I developed a responsive website using HTML, CSS, JavaScript, and Bootstrap.</a>
+        </div>
+       
+       
+
+    </form>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+<!-- https://preview.colorlib.com/theme/bootstrap/appointment-form-09/ -->
